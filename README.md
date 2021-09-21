@@ -15,6 +15,10 @@ The recommended steps to setup the environment locally are described in this sec
 1. Install the ruby version specified in [.ruby-version](https://github.com/exploradoresdemadrid/decide/blob/master/.ruby-version) file. For example, `rvm install ruby-2.7.3`.
 1. Install bundler gem: `gem install bundler`.
 1. Install the dependencies of the project: `bundle install`.
+1. Add the env variables values for:
+    - POSTGRES_HOST
+    - POSTGRES_USER
+    - POSTGRESS_PASSWORD
 1. Create your database with some sample data: `rake db:reset`. A Postgres server needs to be running so that Rails can connect to it.
 1. Start your local server: `rails server`.
 1. Navigate to http://localhost:3000/users/sign_in and sign in with the development accounts (local environment only) and the password `12345768`. Never create these accounts in a production environment.
